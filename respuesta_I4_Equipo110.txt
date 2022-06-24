@@ -1,9 +1,35 @@
 Beta: Martina Torrez. Gamma: Sergio Gonzalez
+
 A- ¿Qué color de fondo tiene su página en el TESTING ?
 Tiene de color de fondo azul
+
 B- ¿Qué color de fondo tiene su página en el DESARROLLO ?
 Tiene un color de fondo amarillo
+
 C- ¿Qué color de fondo tiene su página en el MASTER?
 Tiene un color de fondo azul
+
 D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
 Quedo el de BETA, ya que ALFA no participo en la interaccion
+
+E- ¿Algún integrante tuvo problemas al hacer el push?
+Si, GAMMA a la hora de pushear despues de BETA en el punto 21.
+Y esto solo le paso a GAMMA porque no teniamos ALFA, porque sino le hubiera pasado a BETA tambien
+
+F- ¿Qué problemas surgieron?
+1- Despues del punto 4 a GAMMA no se le actualizaban los datos haciendo el git pull.
+2- En el punto 16, a GAMMA se le generaba un conflicto al hacer el merge que sucede cuando modificas el mismo archivo en la misma linea en dos ramas distinas y despues queres fusionarlas con el main.
+3- En el punto 21, al pobre GAMMA no le dejaba hacer el push porque su version del archivo habia sido modificada por BETA y no la tenia actualizada
+
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+1- Lo que tuvo que hacer GAMMA fue ir a la rama que queria actualizar y ejecutar: git pull https://github.com/S3RGIO-G/TP_SO_I4_Equipo_110.git [nombreRama]
+2- Lo que tuvo que hacer GAMMA fue: dirijiste al archivo y manualmente borrar lo que no queria para despues hacer un git add [archivo en conflicto] y git commit
+3- Tuvo que utilizar un git push -f
+
+H- ¿Qué sucede si cada uno utiliza el push -f?
+Con la opcion -f lo que haces es forzar el push, por lo que si tenias una version vieja del archivo, vas a sobreescribir todas modificaciones posteriores a tu ultimo git pull
+
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+Lo que se deberia hacer es que cada integrante deba actualizar su repositorio local cada vez que alguien haga un push, para asi tener todos la misma info y no pisar la de los otros.
