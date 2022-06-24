@@ -1,3 +1,4 @@
+Beta: Martina Torrez. Gamma: Sergio Gonzalez
 A- ¿Qué color de fondo tiene su página en el TESTING ?
 Tiene de color de fondo azul
 B- ¿Qué color de fondo tiene su página en el DESARROLLO ?
